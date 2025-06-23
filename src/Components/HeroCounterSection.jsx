@@ -26,7 +26,7 @@ export default function HeroCounterSection() {
 
       <div className="md:w-1/2 gap-4 p-4  grid grid-cols-2">
         {item.map((item) => (
-          <div className="bg-white flex flex-col justify-center items-center rounded hover:scale-95 transition hover:bg-accent/20">
+          <div key={crypto.randomUUID()} className="bg-white  flex flex-col justify-center items-center rounded hover:scale-95 transition hover:bg-accent/20 p-5">
             <h1 className="py-5 font-heading text-5xl">{item.count}+</h1>
             <h1 className="text-paragraph font-semibold text-xl">
               {item.title}

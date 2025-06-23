@@ -13,7 +13,7 @@ export default function Services() {
       {/* services  */}
       <div className="md:w-4/6 mx-auto ">
         {servicesData.map((item) => (
-         <ServiceItem item={item}/>
+         <ServiceItem key={crypto.randomUUID()} item={item}/>
         ))}
       </div>
     </>

@@ -31,7 +31,7 @@ export default function ExtraOrdinary() {
       >
         <div className=" grid md:grid-cols-3 gap-4 p-4 justify-center justify-items-center">
           {TextItems.map((item) => (
-            <TextcardExtraordinary
+            <TextcardExtraordinary key={crypto.randomUUID()}
               title={item.title}
               discription={item.discription}
             />
