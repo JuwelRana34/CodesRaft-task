@@ -42,7 +42,7 @@ export default function Envairoments() {
                   </div>
 
                   {item.img && (
-                    <div className="hidden md:block absolute -top-14 right-[30%]">
+                    <div className="hidden lg:block absolute -top-14 right-[30%]">
                       {" "}
                       <img
                         className=" -rotate-12 w-32"

@@ -11,7 +11,7 @@ export default function Home() {
       <Envairoments />
       <ExtraOrdinary />
       <DreamShape />
-      <div className="md:flex  items-center">
+      <div className="md:flex  items-center p-4">
         <h1 className="heading md:w-[60%]">ready to transform your speace?</h1>
 
         <div className="  flex justify-center  md:w-[40%]  ">

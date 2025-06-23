@@ -13,6 +13,6 @@
 @layer utilities{
 
   .heading{
-    @apply text-4xl capitalize md:text-7xl  font-heading text-textColor py-3;
+    @apply text-4xl capitalize lg:text-7xl  font-heading text-textColor py-3;
   }
 }

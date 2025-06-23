@@ -7,12 +7,11 @@ import Button from "./Button";
 export default function Hero() {
   return (
     <>
-      <div className="md:flex justify-center py-10   mx-auto px-4 md:px-0  gap-10">
+      <div className="md:flex justify-center items-center py-4   mx-auto px-4 lg:px-0  gap-10">
         <div className="md:w-1/2">
-          <img src={img1} className="" alt="" srcset="" />
+          <img src={img1} className=" md:scale-75" alt="" srcset="" />
         </div>
         <div className="md:w-1/2  space-y-2 ">
-          <div></div>
           <h1 className=" text-4xl  my-4 md:my-0 lg:text-8xl font-heading ">
             {" "}
             Design your <span className="text-accent/70">dream </span> space
