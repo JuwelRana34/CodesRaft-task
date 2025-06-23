@@ -11,11 +11,11 @@ export default function Home() {
       <Envairoments />
       <ExtraOrdinary />
       <DreamShape />
-      <div className="md:flex  items-center p-4">
-        <h1 className="heading md:w-[60%]">ready to transform your speace?</h1>
+      <div className="md:flex justify-between space-y-4  items-center p-4 py-10">
+        <h1 className=" text-3xl md:text-5xl capitalize ">ready to transform your speace?</h1>
 
-        <div className="  flex justify-center  md:w-[40%]  ">
-          <span className=" hidden md:block bg-accent p-4 rounded-full text-white -rotate-45 ">
+        <div className="  flex justify-center   ">
+          <span className=" animate-pulse  bg-accent p-4 rounded-full text-white -rotate-45 ">
             <BtnArrow />{" "}
           </span>
         </div>

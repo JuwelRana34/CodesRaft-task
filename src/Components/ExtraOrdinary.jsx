@@ -1,53 +1,43 @@
-import img from "../assets/Body1.jpg";
+import img from "../assets/header1.jpg";
 import TextcardExtraordinary from "./TextcardExtraordinary";
+
 export default function ExtraOrdinary() {
-  const leftTextItems = [
+  const TextItems = [
     {
       title: "design expartis",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit fugit animi iure voluptates ab a ipsam praesentium at.",
-      isRight: true,
     },
     {
       title: "design expartis",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit fugit animi iure voluptates ab a ipsam praesentium at.",
-      isRight: true,
+    },
+    {
+      title: "design expartis",
+      discription:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit fugit animi iure voluptates ab a ipsam praesentium at.",
     },
   ];
   return (
     <div>
-      <h1 className="heading mx-auto md:w-1/2  text-center ">
+      <h1 className="heading mx-auto my-5  text-center ">
         unveling the ExtraOrdinary
       </h1>
-      <div className="md:flex justify-between w-4/6 mx-auto gap-5">
-      <div>
-        {leftTextItems.map((item) =>( 
-          <TextcardExtraordinary
-            isRight={item.isRight}
-            title={item.title}
-            discription={item.discription}
-          />
-        ))}
-      </div>
-    
-      <div className="my-5 md:my-0">
-        <img src={img} className="w-96" alt="" srcset="" />
-      </div>
 
-      <div>
-      
-              {leftTextItems.map((item) =>( 
-          <TextcardExtraordinary
-            isRight={item.isRight}
-            title={item.title}
-            discription={item.discription}
-          />
-        ))}
-  
-      
+      <div
+        style={{ backgroundImage: `url(${img})` }}
+        className=" relative bg-cover bg-center bg-fixed  bg-black/50 bg-blend-multiply text-white py-10 "
+      >
+        <div className=" grid md:grid-cols-3 gap-4 p-4 justify-center justify-items-center">
+          {TextItems.map((item) => (
+            <TextcardExtraordinary
+              title={item.title}
+              discription={item.discription}
+            />
+          ))}
+        </div>
       </div>
-    </div>
     </div>
   );
 }

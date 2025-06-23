@@ -1,15 +1,8 @@
-export default function TextcardExtraordinary({title, discription, isRight=null}) {
+export default function TextcardExtraordinary({ title, discription }) {
   return (
-    <div className={`${isRight && "md:text-right"}  space-y-4 py-2`}>
-      <div className=" ">
-        <h1 className="font-semibold capitalize text-textColor">
-          {title}
-        </h1>
-        <p className="text-paragraph">
-          {discription}
-         
-        </p>
-      </div>
+    <div className=" backdrop-blur bg-accent/20 space-y-4 rounded p-4">
+      <h1 className="font-semibold capitalize ">{title}</h1>
+      <p>{discription}</p>
     </div>
   );
 }

@@ -15,7 +15,7 @@ export default function Navbar() {
   ];
   return (
     <>
-      <nav className=" backdrop-blur-lg p-4 sticky top-0 z-10 bg-white/10 ">
+      <nav className=" backdrop-blur-lg p-4 sticky top-0 z-10 bg-white/25 ">
         <div className="container mx-auto flex justify-between items-center">
           <Link
             to="/"

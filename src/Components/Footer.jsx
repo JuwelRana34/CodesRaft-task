@@ -10,9 +10,8 @@ export default function Footer() {
   ];
   return (
     <div className=" container mx-auto space-y-4 p-3">
-      
       <div className="md:flex justify-between items-center space-y-4 border-b border-gray-400 pb-2">
-        <h1 className=" font-heading text-accent text-4xl md:text-7xl uppercase">
+        <h1 className=" font-heading text-accent text-4xl md:text-7xl uppercase ">
           Aesthetic
         </h1>
         <div>

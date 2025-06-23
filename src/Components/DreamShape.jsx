@@ -1,9 +1,9 @@
+import { Link } from "react-router";
 import img1 from "../assets/Body1.jpg";
 import img2 from "../assets/Body2.jpg";
 import img3 from "../assets/header1.jpg";
 import img4 from "../assets/header2.jpg";
 import BtnArrow from "../Icons/BtnArrow";
-import Button from "./Button";
 
 export default function DreamShape() {
   const items = [
@@ -37,11 +37,6 @@ export default function DreamShape() {
     <>
       <div className="p-4 mt-4 container  mx-auto md:flex justify-between items-center">
         <h1 className="heading md:w-[60%]">where dreams take shape</h1>
-        <p className="md:w-[40%] text-paragraph ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          voluptas labore quae illum quaerat ab illo, nam nihil, temporibus
-          magni tempore distinctio itaque ipsa.
-        </p>
       </div>
       <div className="p-4 grid md:grid-cols-2 gap-10">
         {items.map((item) => (
@@ -79,7 +74,12 @@ export default function DreamShape() {
         ))}
       </div>
       <div className="flex justify-center py-2">
-        <Button icon={<BtnArrow/>} style="bg-accent text-white">view all works</Button>
+        <Link
+          to={"/services"}
+          className="bg-accent text-white flex justify-center items-center p-2 rounded-full gap-3 shadow-lg shadow-accent/50"
+        >
+          view all works <BtnArrow />{" "}
+        </Link>
       </div>
     </>
   );

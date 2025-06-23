@@ -13,6 +13,9 @@
 @layer utilities{
 
   .heading{
-    @apply text-4xl capitalize lg:text-7xl  font-heading text-textColor py-3;
+    @apply text-4xl capitalize lg:text-6xl text-center mx-auto  font-heading text-textColor py-3;
+  }
+  .gradient{
+    @apply bg-clip-text   text-transparent bg-linear-to-l/srgb from-orange-500 from-30% to-pink-500 to-70%
   }
 }
