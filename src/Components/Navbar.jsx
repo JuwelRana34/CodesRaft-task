@@ -15,15 +15,15 @@ export default function Navbar() {
   ];
   return (
     <>
-      <nav className=" backdrop-blur-lg p-4 sticky top-0 z-10 bg-white/10 shadow-md">
+      <nav className=" backdrop-blur-lg p-4 sticky top-0 z-10 bg-white/10 ">
         <div className="container mx-auto flex justify-between items-center">
           <Link
             to="/"
-            className="text-textColor  font-bold text-3xl font-heading "
+            className="text-accent  font-bold text-3xl font-heading "
           >
             My Portfolio
           </Link>
-          
+
           {/* desktop menu  */}
           <div className="hidden md:block">
             {navItems.map((item) => (
@@ -31,7 +31,7 @@ export default function Navbar() {
                 Link
                 key={item.name}
                 to={item.path}
-                className="text-gray-700 px-4"
+                className="text-gray-700 p-2"
               >
                 {item.name}
               </NavLink>
@@ -69,7 +69,7 @@ export default function Navbar() {
               onClick={toggleMenu}
               key={item.name}
               to={item.path}
-              className="text-gray-700 px-4"
+              className="text-gray-700 p-2 "
             >
               {item.name}
             </NavLink>

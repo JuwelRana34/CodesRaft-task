@@ -9,3 +9,10 @@
   --font-body: "Lato", sans-serif;
   --font-heading: "Libre Bodoni", serif;
 }
+
+@layer utilities{
+
+  .heading{
+    @apply text-4xl capitalize md:text-7xl  font-heading text-textColor py-3;
+  }
+}
