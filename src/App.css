@@ -1,8 +1,8 @@
 
 
 .active{
-    color: rgb(1, 1, 1); 
+    color: rgba(251, 101, 2, 0.938); 
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.117);
+    background-color: rgba(248, 112, 0, 0.117);
     border-radius: 5px;
 }

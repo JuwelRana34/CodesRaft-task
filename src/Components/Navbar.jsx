@@ -19,9 +19,9 @@ export default function Navbar() {
         <div className="container mx-auto flex justify-between items-center">
           <Link
             to="/"
-            className="text-accent  font-bold text-3xl font-heading "
+            className="text-accent  font-bold text-3xl font-heading uppercase "
           >
-            My Portfolio
+            Aesthetic
           </Link>
 
           {/* desktop menu  */}
