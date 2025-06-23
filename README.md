@@ -55,8 +55,10 @@ npm install
  ┗ README.md
 
 ```
-
+```bash
 npm run build
-# upload `dist/` contents to your static host (Netlify, Vercel, S3, etc.)
+```
+
+## upload `dist/` contents to your static host (Netlify, Vercel, S3, etc.)
 
 
