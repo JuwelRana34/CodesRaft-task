@@ -5,7 +5,7 @@ import img3 from "../assets/header1.jpg";
 import img4 from "../assets/header2.jpg";
 import BtnArrow from "../Icons/BtnArrow";
 
-export default function DreamShape() {
+export default function AllServices() {
   const items = [
     {
       title: "Minimalist Living Room",
@@ -36,7 +36,7 @@ export default function DreamShape() {
   return (
     <>
       <div className="p-4 mt-4 container  mx-auto md:flex justify-between items-center">
-        <h1 className="heading md:w-[60%]">where dreams take shape</h1>
+        <h1 className="heading md:w-[60%]">our services</h1>
       </div>
       <div className="p-4 grid md:grid-cols-2 gap-10">
         {items.map((item) => (

@@ -1,36 +1,20 @@
-import img1 from "../assets/Body2.jpg";
+import { Link } from "react-router";
+import img from "../assets/img8.jpg";
 import BtnArrow from "../Icons/BtnArrow";
-import Button from "./Button";
 
 export default function HerointroSection() {
     return (
-         <div className="md:flex justify-center items-center py-4   mx-auto px-4 lg:px-0  gap-10">
-        <div className="md:w-1/2">
-          <img src={img1} className=" md:scale-75" alt="" srcset="" />
-        </div>
-        <div className="md:w-1/2  space-y-2 ">
-          <h1 className=" text-4xl  my-4 md:my-0 lg:text-8xl font-heading ">
-            {" "}
-            Design your <span className="text-accent/70 ">dream </span> space
-          </h1>
-          <p className=" text-paragraph mt-4 text-justify ">
-            Transform your home into a reflection of your unique style and
-            personality. Our expert designers bring your vision to life with
-            thoughtful layouts and elegant finishes. Let us help you create a
-            space that feels both inspiring and truly yours.
-          </p>
-          <div className="flex gap-2 justify-center py-4">
-            <Button
-              icon={<BtnArrow color={"white"} />}
-              style="bg-accent text-white text-xs lg:text-base "
-            >
-              start a project
-            </Button>
-            <Button icon={<BtnArrow />} style="border text-xs lg:text-base">
-              view recent work
-            </Button>
+
+      <div className="bg-cover bg-center relative min-h-[calc(100vh-150px)] my-5" style={{backgroundImage:`url(${img})`}}>
+         <div className=" inset-0  absolute backdrop-blur-xs bg-black/40 z-10"/>
+          <div className=" flex flex-col justify-center items-center w-full  h-full  absolute z-10 text-white space-y-5 text-center p-4">
+            <h1 className=" text-4xl md:text-7xl font-heading">Bringing Life to Your Living Spaces</h1>
+            <p className=" md:text-lg">Modern, affordable, elegant interior design solutions.</p>
+            <Link className="py-2 px-4 bg-accent rounded-full shadow-2xl  outline shadow-accent outline-offset-3 outline-accent/60 hover:scale-95 transition flex items-center gap-2" to={'/services'}>
+              View Projects <BtnArrow />
+            </Link>
           </div>
-        </div>
+       
       </div>
     );
 }

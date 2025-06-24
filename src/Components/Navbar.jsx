@@ -15,7 +15,7 @@ export default function Navbar() {
   ];
   return (
     <>
-      <nav className=" backdrop-blur-lg p-4 sticky top-0 z-10 bg-white/25 ">
+      <nav className=" backdrop-blur-lg p-4 sticky top-0 z-20 bg-white/25 ">
         <div className="container mx-auto flex justify-between items-center">
           <Link
             to="/"
@@ -54,7 +54,7 @@ export default function Navbar() {
 
       {/* mobile menu */}
       <div
-        className={`fixed top-0 right-0 h-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out w-[60%] md:hidden z-40 ${
+        className={`fixed top-0 right-0 h-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out w-[60%] md:hidden z-50 ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -81,7 +81,7 @@ export default function Navbar() {
 
       {open && (
         <div
-          className="fixed backdrop-blur-lg inset-0 bg-black/10 opacity-50 z-30"
+          className="fixed backdrop-blur-lg inset-0 bg-black/10 opacity-50 z-40"
           onClick={toggleMenu}
         ></div>
       )}

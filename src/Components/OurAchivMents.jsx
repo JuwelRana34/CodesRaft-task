@@ -1,5 +1,5 @@
 import img2 from "../assets/header1.jpg";
-export default function HeroCounterSection() {
+export default function OurAchivMents() {
   const item = [
     {
       title: "Awards",
@@ -19,7 +19,9 @@ export default function HeroCounterSection() {
     },
   ];
   return (
-    <div className="md:flex flex-row-reverse justify-center px-4 md:px-0 space-y-4 gap-1">
+    <div className="md:p-5">
+    <h1 className="heading ">Our Achivements</h1>
+    <div className="md:flex pt-5 flex-row-reverse justify-center px-4 md:px-0 space-y-4 gap-1">
       <div className="md:w-1/2">
         <img src={img2} alt="" srcset="" />
       </div>
@@ -34,6 +36,7 @@ export default function HeroCounterSection() {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }
