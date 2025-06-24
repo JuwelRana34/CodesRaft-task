@@ -10,10 +10,8 @@ export default function RivewSlider() {
   };
   const { name, title, review, img } = data[currentIndex];
   return (
-    <>
-    <h1 className=" heading my-5">
-        Client Review
-    </h1>
+    <div>
+      <h1 className=" heading my-5">Client Review</h1>
       <div className=" md:w-1/2 mx-auto text-center bg-white rounded-md py-5 space-y-2 text-paragraph ">
         <img
           src={img}
@@ -26,7 +24,7 @@ export default function RivewSlider() {
         </h1>
         <p className="text-xs ">{title}</p>
         <p className="capitalize text-green-500/80"> {review} </p>
-        <div className="flex gap-2 justify-center items-center w-full mx-auto ">
+        <div className=" flex gap-2 justify-center items-center w-full mx-auto ">
           <button
             className=" cursor-pointer bg-accent py-2 px-4 rounded-md text-white  shadow-2xl  capitalize hover:scale-95 transition"
             onClick={previousSlide}
@@ -41,6 +39,6 @@ export default function RivewSlider() {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -27,7 +27,7 @@ export default function OurAchivMents() {
         <img src={img2} alt="" srcset="" />
       </div>
 
-      <div className="md:w-1/2 gap-4 p-4  grid grid-cols-2">
+      <div className="md:w-1/2 gap-4 p-4  grid grid-cols-2 capitalize">
         {item.map((item) => (
           <div key={crypto.randomUUID()} className="bg-white  flex flex-col justify-center items-center rounded hover:scale-95 transition hover:bg-accent/20 p-5">
             <h1 className="py-5 font-heading text-5xl">{item.count}+</h1>

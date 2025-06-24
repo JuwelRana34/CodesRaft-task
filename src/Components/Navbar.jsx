@@ -15,7 +15,7 @@ export default function Navbar() {
   ];
   return (
     <>
-      <nav className=" backdrop-blur-lg p-4 sticky top-0 z-20 bg-white/25 ">
+      <nav className=" backdrop-blur-xl p-4 sticky top-0 z-20 bg-white/25 ">
         <div className="container mx-auto flex justify-between items-center">
           <Link
             to="/"
@@ -80,7 +80,7 @@ export default function Navbar() {
 
       {open && (
         <div
-          className="fixed backdrop-blur-lg inset-0 bg-black/10 opacity-50 z-40"
+          className="fixed  inset-0 bg-black/60 backdrop-blur-xs opacity-50 z-40"
           onClick={toggleMenu}
         ></div>
       )}
