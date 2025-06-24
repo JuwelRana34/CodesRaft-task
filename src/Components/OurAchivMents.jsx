@@ -22,6 +22,7 @@ export default function OurAchivMents() {
     <div className="md:p-5">
     <h1 className="heading ">Our Achivements</h1>
     <div className="md:flex pt-5 flex-row-reverse justify-center px-4 md:px-0 space-y-4 gap-1">
+
       <div className="md:w-1/2">
         <img src={img2} alt="" srcset="" />
       </div>
