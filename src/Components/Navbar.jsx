@@ -28,7 +28,6 @@ export default function Navbar() {
           <div className="hidden md:block">
             {navItems.map((item) => (
               <NavLink
-                Link
                 key={item.name}
                 to={item.path}
                 className="text-gray-700 p-2"

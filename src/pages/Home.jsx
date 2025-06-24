@@ -2,6 +2,7 @@ import AllServices from "../Components/AllServices";
 import Hero from "../Components/Hero";
 import OurAchivMents from "../Components/OurAchivMents";
 import ProvideServices from "../Components/ProvideServices";
+import RivewSlider from "../Components/RivewSlider";
 import Subscribe from "../Components/Subscribe";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <ProvideServices />
       <OurAchivMents/>
       <AllServices />
+      <RivewSlider/>
       <Subscribe />
      
     </div>
